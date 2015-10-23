@@ -23,7 +23,7 @@ for i in range(len(folderList)):
         os.mkdir(folderList[i])
 
 def getId(server):
-	servers = {'qa1':'https://ultra-qa.int.bbpd.io/', 'stg':'https://saas-stg.int.bbpd.io/', 
+	servers = {'qa1':'https://ultra-qa1.int.bbpd.io/', 'stg':'https://saas-stg.int.bbpd.io/', 
 	           'demo':'https://ultra-demo.int.bbpd.io/'}
 	baseURL = servers[server]
 	print(baseURL)
@@ -219,7 +219,7 @@ def sendMail():
 		    """%(dateSend, qa1Info, saasInfo, demoInfo, msgReport, jiraFormat), "html", "utf-8")
 
 		fro = 'printer.shanghai@blackboard.com'
-		to = 'Tony.Feng@blackboard.com'
+		to = 'Bob.Liu@blackboard.com'
 		smtpserver = '10.75.106.10:25'
         msg['From'] = fro
         msg['Subject'] = 'Servers information'
