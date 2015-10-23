@@ -143,7 +143,7 @@ def sendMail():
             """%(data[2][0],data[2][2]) if data[2][0] !='' and data[2][2] !='' else """ """  
 		msgReport = """
             		<p text-align="left">
-						%s<br>%s<br>%s
+						%s<br><br>%s<br><br>%s
 					</p>
 					"""%(qa1Report, stgReport, demoReport)
 
@@ -219,7 +219,7 @@ def sendMail():
 		    """%(dateSend, qa1Info, saasInfo, demoInfo, msgReport, jiraFormat), "html", "utf-8")
 
 		fro = 'printer.shanghai@blackboard.com'
-		to = 'Bob.Liu@blackboard.com'
+		to = 'Tony.Feng@blackboard.com'
 		smtpserver = '10.75.106.10:25'
         msg['From'] = fro
         msg['Subject'] = 'Servers information'
