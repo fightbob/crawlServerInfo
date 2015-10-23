@@ -132,7 +132,7 @@ def sendMail():
             """%(data[2][0],data[2][2]) if data[2][0] !='' and data[2][2] !='' else """ """  
 		msgReport = """
             		<p text-align="left">
-						%s<br>%s<br>%s
+						%s<br><br>%s<br><br>%s
 					</p>
 					"""%(qa1Report, stgReport, demoReport)
 
